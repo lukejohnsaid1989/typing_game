@@ -61,8 +61,8 @@ if __name__ == '__main__':
         pass
     t0 = read_time_0()
     st.header("TYPING GAME")
-    st.write("This game takes a list of words as input, shuffles them, writes them one at a time")
-    st.write("and measures the velocity at which you type")
+    st.write("This game takes a list of words as input, shuffles them, writes them one at a time, and awaits your input to type in each word.")
+    st.write("It keeps track of the time and will calculate your average typing velocity.")
     st.subheader("type in the words you want to type separated by a comma in the box below.")
     text_input = st.text_input(label="Typing word list", value=",".join(initial_red_words))
     ls_, ln = get_red_words_list(text_input)
