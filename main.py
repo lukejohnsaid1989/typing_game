@@ -71,8 +71,8 @@ if __name__ == '__main__':
             write_time_0()
             t0 = read_time_0()
         cur_word = ls_[-1]
-        st.subheader(cur_word)
-        game_input = st.text_input(label=f"type {cur_word}!", value="")
+        st.header(cur_word)
+        game_input = st.text_input(label=f"type: '{cur_word}' ", value="")
         if game_input == cur_word:
             next_word = st.button(label="CLICK FOR NEXT WORD!")
             ls_.pop()
