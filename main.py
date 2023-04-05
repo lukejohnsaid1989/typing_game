@@ -74,7 +74,6 @@ if __name__ == '__main__':
         st.header(cur_word)
         game_input = st.text_input(label=f"type: '{cur_word}' ", value="")
         if game_input == cur_word:
-            next_word = st.button(label="CLICK FOR NEXT WORD!")
             ls_.pop()
             shuffle(ls_)
             st.subheader(f"Words completed: {ln - len(ls_)}")
@@ -83,8 +82,6 @@ if __name__ == '__main__':
             delta = calculate_time_difference(t1, t0)
             st.subheader(f"Time elapsed time: {delta} seconds / {round(delta / 60, 2)} minutes")
             st.subheader(f"You started at:  {t0}")
-            if next_word:
-                pass
         else:
             pass
     else:
