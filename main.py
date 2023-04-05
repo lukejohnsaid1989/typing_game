@@ -98,5 +98,6 @@ if __name__ == '__main__':
             st.subheader(f"Your word velocity was: {round(ln / delta, 2)} words per second")
             st.subheader(f"You started at:  {t0}")
             st.subheader("Write a new set of words to go again!")
+            st.subheader("If you want to try the same set of words, clear cache from the menu at the top right!")
         else:
             pass
